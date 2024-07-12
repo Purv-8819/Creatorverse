@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 # Creatorverse
 
 Prework for Codepath Advanced Web Development Course
+npm run dev to create server
