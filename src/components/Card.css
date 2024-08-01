@@ -18,15 +18,10 @@ img{
 }
 
 .icon{
+   font-size:20px;
    margin: 15px;
 }
 
-button {
-   border: transparent;
-   background-color: transparent;
-   font-size: 20px;
-}
-
-button:hover{
+.icon:hover{
    cursor: pointer;
 }

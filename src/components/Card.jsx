@@ -4,6 +4,7 @@ import { faYoutube} from '@fortawesome/free-brands-svg-icons';
 import { faCircleInfo, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./Card.css";
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,7 +26,8 @@ export default function Card(props){
    }
 
    const getInfo = () =>{
-      console.log("INFO")
+      console.log("INFO");
+      window.history.pushState({}, undefined, "/contact");
    }
 
    return(
@@ -39,12 +41,10 @@ export default function Card(props){
          </div>
          <img src={props.creator.imageURL} alt={props.creator.name + "'s picture"}></img>
          <div className='utility'>
-            <button onClick={getInfo}>
-               <FontAwesomeIcon className='icon' icon={faCircleInfo}></FontAwesomeIcon>
-            </button>
-            <button>
-               <FontAwesomeIcon className='icon' icon={faTrash}></FontAwesomeIcon>
-            </button>
+            <Link to={"../view?id="+props.creator.id}>
+               <FontAwesomeIcon onClick={getInfo}className='icon' icon={faCircleInfo}></FontAwesomeIcon>
+            </Link>
+            <FontAwesomeIcon className='icon' icon={faTrash}></FontAwesomeIcon>
          </div>
       </div>
    );
