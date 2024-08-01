@@ -1,0 +1,28 @@
+#header {
+   background-image: url("../src/assets/header_background.jpg");
+   background-position-x: 50%;
+   background-position-y: 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100vw;
+   height: 400px;
+   padding-top: 200px;
+   position: relative;
+   top: -250px;
+   border-bottom:rgb(83, 143, 196) solid 2px;
+}
+
+#title{
+   margin: 0px 0px 50px 0px;
+   font-size: 7vw;
+}
+
+.header-button{
+   width: 20vw;
+   height: 6vh;
+   border-radius: 2px;
+   background-color: rgb(83, 143, 196);
+   font-size: large;
+   font-weight: bolder;
+   margin: 0 50px;
+}
