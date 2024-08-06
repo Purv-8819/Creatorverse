@@ -48,7 +48,7 @@ function ViewCreator() {
       </div>
       <div className='modify'>
         <button>EDIT</button>
-        <button>DELETE</button>
+        <button className='delete'>DELETE</button>
       </div>
     </div>
   )
