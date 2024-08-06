@@ -1,29 +1,36 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../client';
 import Header from '../components/Header';
+import "./AddCreator.css"
+
 
 function AddCreator() {
-  const [creators, setCreators] = useState([])
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+  const [yLink, setYLink] = useState("");
+  const [iLink, setILink] = useState("");
 
-  useEffect(() => {
-    async function getTodos() {
-      const { data: creators } = await supabase.from('creators').select()
+  function handleSubmit(e){
+    e.preventDefault();
 
-      if (creators.length > 1) {
-         setCreators(creators)
-      }
-    }
-
-    getTodos()
-  }, [])
+  }
 
   return (
     <div>
       <Header></Header>
-      <h1>ADD CREATOR</h1>
-      {creators.map((creator) => (
-        <li key={creator.id}>{creator.name}</li>
-      ))}
+      <form>
+        <h2>General Info</h2>
+        <label>Name</label>
+        <input type='text' value={name} onChange={(e)=>{setName(e.target.value)}}></input>
+        <label>Description</label>
+        <textarea value={description} onChange={(e)=>{setDescription(e.target.value)}}></textarea>
+        <h2>Social Media</h2>
+        <label>Youtube Link</label>
+        <input type='text' value={yLink} onChange={(e)=>{setYLink(e.target.value)}}></input>
+        <label>Image Link</label>
+        <input type='text' value={iLink} onChange={(e)=>{setILink(e.target.value)}}></input>
+        <button type='submit' onClick={handleSubmit}>SUBMIT</button>
+      </form>
     </div>
   )
 }
