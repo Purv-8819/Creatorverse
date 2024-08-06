@@ -1,0 +1,54 @@
+/* <div className='container'>
+        <div>
+          <img src={creator.imageURL}></img>
+        </div>
+        <div className='info-container'>
+          <h2>{creator.name}</h2>
+          <p>{creator.description}</p>
+          <a href={creator.url}>
+               <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className='modify'>
+          <button>EDIT</button>
+          <button>DELETE</button>
+           */
+
+
+.container{
+   display: grid;
+   grid-template-columns: auto auto;
+   text-align: center;
+   padding: 0px 2em;
+   margin: auto 4em;
+   column-gap: 1em;
+}
+
+.container img{
+   width: auto;
+   height: 400px;
+   /* margin: auto; */
+   display: block;
+   border: rgb(81, 133, 180) solid 2px;
+}
+
+.modify{
+   column-span: 2;
+
+   margin: 3em auto;
+}
+
+.icon{
+   font-size: 10px;
+   margin: 20px auto 20px auto;
+}
+
+.icon:hover{
+   cursor: pointer;
+}
+
+
+.info-container{
+   text-align: left;
+   margin-right: 10em;
+}

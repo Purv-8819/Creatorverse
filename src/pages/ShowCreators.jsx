@@ -3,6 +3,7 @@ import { supabase } from '../client';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import "./ShowCreators.css"
+import "../index.css"
 
 function ShowCreators() {
   const [creators, setCreators] = useState([])
@@ -20,14 +21,15 @@ function ShowCreators() {
   }, [])
 
   return (
-    <div>
+    <div className='view-container'>
       <Header></Header>
-      <h1>SHOW CREATORS</h1>
+      {/* <h1>SHOW CREATORS</h1> */}
       <div className='creator-container'>
         {creators.map((creato) => (
           <Card key={creato.id} creator={creato}/>
         ))}
       </div>
+      {creators.length == 0 && <h1 className='title'>NO CREATORS ADDED</h1>}
     </div>
   )
 }

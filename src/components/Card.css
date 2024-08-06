@@ -19,7 +19,7 @@ img{
 
 .icon{
    font-size:20px;
-   margin: 15px;
+   margin: 20px auto 20px auto;
 }
 
 .icon:hover{
