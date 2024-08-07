@@ -15,7 +15,7 @@ class Header extends React.Component {
     return (
       <div id="header">
        <h1 id="title">CREATORVERSE</h1>
-       <div>
+       <div className="container">
          <a href="/">
             <button className="header-button">VIEW ALL CREATORS</button>
          </a>
