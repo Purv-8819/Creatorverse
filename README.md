@@ -1,10 +1,10 @@
 # WEB103 Prework - Creatorverse
 
-Submitted by: Purv Patel
+Submitted by: **Purv Patel**
 
-About this web app: **👉🏿 app description here**
+About this web app: **An App to track your favorite content creators in one place**
 
-Time spent: **👉🏿 X** hours
+Time spent: **40** hours
 
 ## Required Features
 
