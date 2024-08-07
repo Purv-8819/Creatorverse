@@ -33,6 +33,10 @@ function ViewCreator() {
     getCreator();
   }, [])
 
+  function editCreator() {
+    window.location.assign("/edit?id="+creator.id);
+  }
+
   return (
     <div>
       <Header></Header>
@@ -47,7 +51,7 @@ function ViewCreator() {
         </div>
       </div>
       <div className='modify'>
-        <button>EDIT</button>
+        <button onClick={editCreator}>EDIT</button>
         <button className='delete'>DELETE</button>
       </div>
     </div>

@@ -1,0 +1,49 @@
+form{
+   margin: 2em 35em;
+   display: grid;
+   columns: auto;
+   text-align: left;
+   position: relative;
+   top: -180px;
+}
+
+label{
+   font-size: 1.7em;
+}
+
+h2{
+   font-size: 2.2em;
+   color:rgb(81, 133, 180);
+   margin-bottom: 0;
+}
+
+input{
+   background-color: white;
+   color: black;
+   font-size: 1.5em;
+   font-weight: lighter;
+   padding: .5em .4em;
+   border-radius: 5px;
+}
+
+textarea{
+   background-color: white;
+   color: black;
+   font-size: 1.5em;
+   font-weight: lighter;
+   padding: .5em .4em;
+   border-radius: 5px;
+}
+
+button{
+   margin: 1em 0;
+   padding: .25em 0;
+   font-size: 2em;
+   background-color:rgb(81, 133, 180);
+   border: none;
+}
+
+button:hover{
+   cursor: pointer;
+}
+
