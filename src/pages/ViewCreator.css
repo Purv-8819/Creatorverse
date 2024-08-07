@@ -10,6 +10,7 @@
 .container img{
    width: auto;
    height: 400px;
+   padding: 0;
    /* margin: auto; */
    display: block;
    border: rgb(81, 133, 180) solid 2px;

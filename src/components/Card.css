@@ -1,6 +1,6 @@
 .Card{
    display: grid;
-   grid-template-columns: auto auto 60px;
+   grid-template-columns: auto auto 100px;
    background-color: #242424;
    border: rgb(83, 143, 196) solid 2px;
    margin: 0 10px;
@@ -8,7 +8,11 @@
 }
 
 img{
-   margin: auto
+   margin: auto;
+   padding: 2em;
+   width: 15em;
+   height: auto;
+   object-fit:scale-down;
 }
 
 .utility{
