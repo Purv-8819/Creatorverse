@@ -37,6 +37,11 @@ function ViewCreator() {
     window.location.assign("/edit?id="+creator.id);
   }
 
+  async function deleteCreator(){
+    const response = await supabase.from('creators').delete().eq('id', creator.id);
+    window.location.assign("/");
+  }
+
   return (
     <div>
       <Header></Header>
@@ -52,7 +57,7 @@ function ViewCreator() {
       </div>
       <div className='modify'>
         <button onClick={editCreator}>EDIT</button>
-        <button className='delete'>DELETE</button>
+        <button onClick={deleteCreator} className='delete'>DELETE</button>
       </div>
     </div>
   )

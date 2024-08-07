@@ -21,7 +21,7 @@ function AddCreator() {
 
   async function postCreator(){
     const {error} = await supabase.from('creators').insert({
-      name: creatorName, description: creatorDescription, url: yLink, imageURL: iLink
+      name: creatorName, description: creatorDescription, url: yLink, imageURL: iLink == "" ? "unknown" : iLink
     })
 
     setName("");

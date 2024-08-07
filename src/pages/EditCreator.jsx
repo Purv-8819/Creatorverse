@@ -49,7 +49,7 @@ function EditCreator() {
 
   async function updateCreator(){
     const {error} = await supabase.from('creators').update({
-      name: creatorName, description: creatorDescription, url: yLink, imageURL: iLink
+      name: creatorName, description: creatorDescription, url: yLink, imageURL: iLink == "" ? "unknown" : iLink
     }).eq('id', creator.id);
     window.location.assign("/");
   }

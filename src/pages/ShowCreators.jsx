@@ -12,7 +12,7 @@ function ShowCreators() {
     async function getTodos() {
       const { data: creators } = await supabase.from('creators').select()
 
-      if (creators.length > 1) {
+      if (creators.length > 0) {
          setCreators(creators)
       }
     }

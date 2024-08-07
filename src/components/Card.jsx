@@ -3,20 +3,11 @@ import { useState, useEffect } from 'react'
 import { faYoutube} from '@fortawesome/free-brands-svg-icons';
 import { faCircleInfo, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { supabase } from '../client';
 import "./Card.css";
 import { Link } from 'react-router-dom';
 
 
-
-//Given objcet in form 
-// {
-//    created_at:
-//    description:
-//    id:
-//    imageURL:
-//    name:
-//    url:
-// }
 export default function Card(props){
 
    if(props.creator == undefined){
@@ -26,8 +17,11 @@ export default function Card(props){
    }
 
    const getInfo = () =>{
-      console.log("INFO");
       window.history.pushState({}, undefined, "/contact");
+   }
+
+   async function deleteCreator(){
+      const response = await supabase.from('creators').delete().eq('id', props.creator.id);
    }
 
    return(
@@ -44,7 +38,7 @@ export default function Card(props){
             <Link to={"../view?id="+props.creator.id}>
                <FontAwesomeIcon onClick={getInfo}className='icon' icon={faCircleInfo}></FontAwesomeIcon>
             </Link>
-            <FontAwesomeIcon className='icon' icon={faTrash}></FontAwesomeIcon>
+            <FontAwesomeIcon onClick={deleteCreator} className='icon' icon={faTrash}></FontAwesomeIcon>
          </div>
       </div>
    );
