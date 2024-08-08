@@ -37,7 +37,6 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <a href="https://imgur.com/NPHeg4m"><img src="https://imgur.com/NPHeg4m" title="source: imgur.com" /></a>
-[Imgur](https://i.imgur.com/NPHeg4m.mp4)
 
 <!-- Replace this with whatever GIF tool you used! -->
 
