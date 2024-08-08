@@ -36,9 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<a href="https://imgur.com/NPHeg4m"><img src="https://imgur.com/NPHeg4m" title="source: imgur.com" /></a>
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/N718gWX"  ><a href="//imgur.com/a/N718gWX">Codepath Creatorverse Walkthrough</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a href="//imgur.com/a/N718gWX"><img src="//imgur.com/a/N718gWX" title="source: imgur.com" /></a>
 
 <!-- Replace this with whatever GIF tool you used! -->
 
