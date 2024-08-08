@@ -36,7 +36,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
+<<<<<<< HEAD
 <a href="//imgur.com/a/N718gWX"><img src="https://i.imgur.com/NPHeg4m.mp4" title="walkthrough gif" /></a>
+=======
+<a href="//imgur.com/a/N718gWX"><img src="//imgur.com/a/N718gWX" title="source: imgur.com" /></a>
+>>>>>>> acef1518a7ee117509e3ef5254f5af0ed8a6ecb0
 
 <!-- Replace this with whatever GIF tool you used! -->
 
